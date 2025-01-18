@@ -68,7 +68,7 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav ul li:hover {
     box-shadow: 0 4px 16px #eacda3; /* Sombra mais intensa ao passar o mouse */
     border-radius: 20px;
     background-color: #eacda3;
