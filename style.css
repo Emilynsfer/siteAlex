@@ -565,10 +565,16 @@ button:hover {
         font-size: 40px;
     }
 
+    .inicio {
+        height: 500px;
+        width: 100%;
+        padding-top: 150px;
+    }
+
 
     .inicio h1 {
         font-size: 30px;
-        padding: 20px 50px;
+        padding: 30px 20px;
     }
 
     .inicio p {
@@ -577,7 +583,7 @@ button:hover {
     }
 
     .inicio button {
-        margin: 30px 50px;
+        margin-top: 30px;
     }
 
     .sobre {
@@ -598,10 +604,7 @@ button:hover {
         width: 100%;
     }
 
-    .menu img {
-        width: 100px;
-        margin-left: 20px;
-    }
+    
 
 }
 
@@ -649,4 +652,6 @@ button:hover {
         padding: 15px;
     }
 }
+
+
 
