@@ -22,6 +22,41 @@
     z-index: 1000;
 }
 
+.whatsapp-link:before, .whatsapp-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 2px solid green;
+    animation: animar 1.5s linear infinite;
+}
+
+.whatsapp-link::after {
+    animation-delay: .5s;
+}
+
+@keyframes animar {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+
+    }
+    
+}
+
+
 .fa-whatsapp {
     margin-top: 16px;
 }
@@ -98,6 +133,7 @@ header nav ul li:hover {
 header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
+
 }
 
 
@@ -192,8 +228,8 @@ header nav ul{
 
 
 .inicio h1 {
-    color: white;
-    z-index: 1;          
+    color: white; 
+    z-index: 1;        
     padding: 230px 100px 0px 100px;
     font-family: sans-serif;
     font-size: 40px;
@@ -499,18 +535,22 @@ button:hover {
 }
 
 .contato p {
-    font-size: 1.2em;
-    margin: 15px 0; 
-}
-
-.contato p {
     border: 2px solid #fff; 
     padding: 10px; 
     border-radius: 10px;
+    font-size: 1.2em;
+    margin: 15px 0; 
     width: 300px; 
     text-align: center; 
     margin: 10px 0; 
     transition: border-color 0.3s ease, background-color 0.3s ease; 
+}
+
+
+
+.contato a {
+    color: white;
+    text-decoration: none;
 }
 
 .contato p:hover {
@@ -520,6 +560,15 @@ button:hover {
 
 .rodape p {
     margin-top: 20px;
+}
+
+footer .redes {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer .fa-instagram {
+    margin-right: 5px;
 }
 
 
@@ -627,6 +676,7 @@ button:hover {
     
 
 }
+
 
 
 @media (max-width: 480px) {
